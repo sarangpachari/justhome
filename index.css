@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.43);
+  backdrop-filter: blur(50px);
+}
+nav a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+}
+.home-divs {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.foryou-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  place-items: center;
+  padding: 24px;
+}
+.foryou-card {
+  max-width: 400px;
+}
+.best-pro-grid-container {
+  display: grid;
+  grid-template-areas:
+    "gridOne gridOne gridOne gridTwo gridTwo gridTwo"
+    "gridThree gridThree gridThree gridTwo gridTwo gridTwo";
+  max-width: 60rem;
+  gap: 12px;
+}
+.best-pro-grid-1 {
+  grid-area: gridOne;
+}
+.best-pro-grid-2 {
+  grid-area: gridTwo;
+}
+.best-pro-grid-3 {
+  grid-area: gridThree;
+}
+
+@media only screen and (max-width: 800px) {
+    .best-pro-grid-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }

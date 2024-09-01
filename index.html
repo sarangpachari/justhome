@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustHome</title>
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FLOWBITE CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- INDEX CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- HOME PAGE WITH NAVBAR -->
+    <div id="home">
+      <nav class="fixed w-full z-20 top-0 start-0">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="images/logo-justhome.png"
+              class="h-8"
+              alt="JustHome Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <a href="" class="flex items-center">
+              <img src="images/phone-icon.png" class="h-5" alt="" />
+              <p class="text-white mx-3">+68 685 88666</p>
+            </a>
+            <a href="" class="flex items-center">
+              <img src="images/user-icon.png" class="h-5 md:mx-5" alt="" />
+            </a>
+            <button
+              class="rounded-3xl border px-3 py-1 text-white hover:bg-white hover:text-black duration-300"
+            >
+              Add Property
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black rounded md:bg-transparent md:text-white md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:text-white md:hover:bg-transparent md:hover:text-slate-700 md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:text-white md:hover:bg-transparent md:hover:text-slate-700 md:p-0"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:text-white md:hover:bg-transparent md:hover:text-slate-700 md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="bg-[url('images/main-background.jpg')] h-lvh bg-cover flex flex-col gap-5 items-center justify-center place-items-center home-divs"
+      >
+        <div class="px-3">
+          <button
+            class="animate__animated animate__fadeInDown animate__delay-2s rounded-3xl border px-4 py-2 text-white hover:bg-white hover:text-black duration-300"
+          >
+            LET US GUIDE YOUR HOME
+          </button>
+        </div>
+        <div class="px-8">
+          <p class="animate__animated animate__fadeInDown text-5xl font-medium text-white text-center">
+            Discover a place you'll love to live
+          </p>
+        </div>
+        <div class="w-full px-8">
+          <form class="max-w-md mx-auto animate__animated animate__fadeInDown animate__delay-4s">
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-3xl bg-[#f4f6f6] focus:bg-white focus:ring-slate-500 focus:border-slate-500"
+                placeholder="Search Homes, Rental..."
+                required
+              />
+              <button
+                type="submit"
+                class="absolute end-2.5 bottom-2.5 bg-[#E7C873] hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2"
+              >
+                <i class="fa-solid fa-magnifying-glass mt-1"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- HOMES FOR YOU SECTION -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      id="foryou"
+      class="py-20 bg-[#F6F8FA]"
+    >
+      <!-- DIV HEADING -->
+      <div class="text-center my-8">
+        <p class="text-3xl font-bold tracking-wide">Homes For You</p>
+        <p class="text-sm mt-1">Based on your view history</p>
+      </div>
+      <!-- CARDS CONTAINER -->
+      <div class="foryou-cards-grid">
+        <!-- CARDS -->
+        <div class="foryou-card bg-white p-5 rounded-2xl">
+          <div class="relative">
+            <img src="images/foryou-1.jpg" class="rounded-2xl" alt="" />
+            <div class="absolute top-5 left-5">
+              <p
+                class="bg-[#1F4B43] text-white px-4 py-2 font-medium text-xs rounded-2xl"
+              >
+                FOR SALE
+              </p>
+            </div>
+            <div class="absolute top-5 left-28">
+              <p class="bg-[#E7C873] px-4 py-2 font-medium text-xs rounded-2xl">
+                FEATURED
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between mt-3">
+            <p class="text-lg font-medium">Skyper Pool Apartment</p>
+            <p class="text-[#EB664E] font-medium text-lg">$280,000</p>
+          </div>
+          <div class="flex gap-3 mt-3">
+            <img src="images/location-icon.png" class="h-5" alt="" />
+            <p>1020 Bloomingdale Ave</p>
+          </div>
+          <div class="flex justify-between mt-3">
+            <div class="flex gap-3">
+              <img src="images/beds-icon.png" class="h-5" alt="" />
+              <p>4 Beds</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/baths-icon.png" class="h-5" alt="" />
+              <p>2 Baths</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/square-feet-icon.png" class="h-5" alt="" />
+              <p>450 sqft</p>
+            </div>
+          </div>
+        </div>
+        <div class="foryou-card bg-white p-5 rounded-2xl">
+          <div class="relative">
+            <img src="images/foryou-2.jpg" class="rounded-2xl" alt="" />
+            <div class="absolute top-5 left-5">
+              <p
+                class="bg-[#1F4B43] text-white px-4 py-2 font-medium text-xs rounded-2xl"
+              >
+                FOR RENT
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between mt-3">
+            <p class="text-lg font-medium">North Dillard Street</p>
+            <p class="text-[#EB664E] font-medium text-lg">
+              $250<span class="font-light text-sm">/month</span>
+            </p>
+          </div>
+          <div class="flex gap-3 mt-3">
+            <img src="images/location-icon.png" class="h-5" alt="" />
+            <p>4330 Bell Shoals Rd</p>
+          </div>
+          <div class="flex justify-between mt-3">
+            <div class="flex gap-3">
+              <img src="images/beds-icon.png" class="h-5" alt="" />
+              <p>4 Beds</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/baths-icon.png" class="h-5" alt="" />
+              <p>2 Baths</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/square-feet-icon.png" class="h-5" alt="" />
+              <p>400 sqft</p>
+            </div>
+          </div>
+        </div>
+        <div class="foryou-card bg-white p-5 rounded-2xl">
+          <div class="relative">
+            <img src="images/foryou-3.jpg" class="rounded-2xl" alt="" />
+            <div class="absolute top-5 left-5">
+              <p
+                class="bg-[#1F4B43] text-white px-4 py-2 font-medium text-xs rounded-2xl"
+              >
+                FOR SALE
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between mt-3">
+            <p class="text-lg font-medium">Eaton Garth Penthouse</p>
+            <p class="text-[#EB664E] font-medium text-lg">$180,000</p>
+          </div>
+          <div class="flex gap-3 mt-3">
+            <img src="images/location-icon.png" class="h-5" alt="" />
+            <p>7722 18th Ave, Brooklyn</p>
+          </div>
+          <div class="flex justify-between mt-3">
+            <div class="flex gap-3">
+              <img src="images/beds-icon.png" class="h-5" alt="" />
+              <p>4 Beds</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/baths-icon.png" class="h-5" alt="" />
+              <p>2 Baths</p>
+            </div>
+            <div class="flex gap-3">
+              <img src="images/square-feet-icon.png" class="h-5" alt="" />
+              <p>450 sqft</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIND PROPERTIES SECTION -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      id="find-properties"
+      class="my-20"
+    >
+      <!-- DIV HEADING -->
+      <div class="text-center my-10">
+        <p class="text-3xl font-bold tracking-wide">
+          Find Properties in These Cities
+        </p>
+        <p class="text-sm mt-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <!-- GRID CONTAINER -->
+      <div
+        class="find-pro-grid-container-1 flex flex-col items-center md:flex-row gap-3 my-3 justify-center"
+      >
+        <div class="relative">
+          <img
+            src="images/find-pro-1.jpg"
+            class="h-60 rounded-lg brightness-75"
+            alt=""
+          />
+          <div class="absolute top-5 left-5 text-white">
+            <p>8 Properties</p>
+            <p>New York</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="relative">
+            <img
+              src="images/find-pro-2.jpg"
+              class="h-60 rounded-lg brightness-75"
+              alt=""
+            />
+            <div class="absolute top-5 left-5 text-white">
+              <p>2 Properties</p>
+              <p>Chicago</p>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="images/find-pro-3.jpg"
+              class="h-60 rounded-lg brightness-75"
+              alt=""
+            />
+            <div class="absolute top-5 left-5 text-white">
+              <p>1 Property</p>
+              <p>Los Angeles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="find-pro-grid-container-2 flex flex-col items-center md:flex-row gap-3 my-3 justify-center"
+      >
+        <div class="flex gap-3">
+          <div class="relative">
+            <img
+              src="images/find-pro-4.jpg"
+              class="h-60 rounded-lg brightness-75"
+              alt=""
+            />
+            <div class="absolute top-5 left-5 text-white">
+              <p>0 Properties</p>
+              <p>San Diego</p>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="images/find-pro-5.jpg"
+              class="h-60 rounded-lg brightness-75"
+              alt=""
+            />
+            <div class="absolute top-5 left-5 text-white">
+              <p>3 Properties</p>
+              <p>Florida</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/find-pro-6.jpg"
+            class="h-60 rounded-lg brightness-75"
+            alt=""
+          />
+          <div class="absolute top-5 left-5 text-white">
+            <p>2 Properties</p>
+            <p>Miami</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WHO CHOOSE US SECTION -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      id="who-choose"
+      class="bg-[#E7C873] py-20 px-8"
+    >
+      <!-- DIV HEADING -->
+      <div class="text-center my-16">
+        <p class="text-3xl font-bold tracking-wide">Why Choose Us</p>
+        <p class="text-sm mt-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <!-- DIV COLUMNS -->
+      <div class="flex md:flex-row flex-col gap-8 items-center justify-center">
+        <div
+          class="max-w-xs flex flex-col gap-3 items-center justify-center text-center"
+        >
+          <img src="images/choose-1.png" class="h-10" alt="" />
+          <p class="text-2xl font-medium">Find your future home</p>
+          <p class="text-center">
+            We help you find a new home by offering a smart real estate
+            experience
+          </p>
+        </div>
+        <div
+          class="max-w-xs flex flex-col gap-3 items-center justify-center text-center"
+        >
+          <img src="images/choose-2.png" class="h-10" alt="" />
+          <p class="text-2xl font-medium">Experienced agents</p>
+          <p class="text-center">
+            Find an experienced agent who knows your market best
+          </p>
+        </div>
+        <div
+          class="max-w-xs flex flex-col gap-3 items-center justify-center text-center"
+        >
+          <img src="images/choose-3.png" class="h-10" alt="" />
+          <p class="text-2xl font-medium">Buy or rent homes</p>
+          <p class="text-center">
+            Millions of houses and apartments in your favourite cities
+          </p>
+        </div>
+        <div
+          class="max-w-xs flex flex-col gap-3 items-center justify-center text-center"
+        >
+          <img src="images/choose-4.png" class="h-10" alt="" />
+          <p class="text-2xl font-medium">List your own property</p>
+          <p class="text-center">
+            Sign up now and sell or rent your own properties
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- BEST PROPERTIES SECTION -->
+    <div data-aos="fade-up" data-aos-duration="800" id="best-pro" class="my-20">
+      <!-- DIV HEADING -->
+      <div class="text-center my-10">
+        <p class="text-3xl font-bold tracking-wide">Best Properties</p>
+        <p class="text-sm mt-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="best-pro-grid-container p-5">
+          <div class="best-pro-grid-1">
+            <img
+              src="images/best-pro-1.jpg"
+              class="h-full rounded-2xl"
+              alt=""
+            />
+          </div>
+          <div class="best-pro-grid-2 relative">
+            <img
+              src="images/best-pro-3.jpg"
+              class="h-full rounded-2xl"
+              alt=""
+            />
+            <div class="absolute top-5 left-5">
+              <p
+                class="bg-[#1F4B43] text-white px-4 py-2 font-medium text-xs rounded-2xl"
+              >
+                FOR SALE
+              </p>
+            </div>
+            <div class="absolute top-5 left-32">
+              <p class="bg-[#E7C873] px-4 py-2 font-medium text-xs rounded-2xl">
+                FEATURED
+              </p>
+            </div>
+            <div
+              class="absolute bottom-5 left-5 bg-black bg-opacity-50 px-3 py-3 rounded-xl"
+            >
+              <div>
+                <p class="text-white">Villa One Hyde Park</p>
+              </div>
+              <div class="flex gap-3">
+                <img src="images/location-icon-white.png" class="h-5" alt="" />
+                <p class="text-white font-light">2050 Bloomingdale Ave</p>
+              </div>
+              <div class="flex gap-10">
+                <div>
+                  <p class="text-white">$120,000</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex gap-2">
+                    <img src="images/beds-icon-white.png" class="h-5" alt="" />
+                    <p class="text-white font-light">4</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="images/baths-icon-white.png" class="h-5" alt="" />
+                    <p class="text-white font-light">2</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <img
+                      src="images/squarefeet-icon-white.png"
+                      class="h-5"
+                      alt=""
+                    />
+                    <p class="text-white font-light">350</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="best-pro-grid-3 flex gap-3">
+            <div
+              class="bg-[#1A1A1A] text-white w-1/2 p-5 grid place-items-center rounded-2xl"
+            >
+              <div>
+                <p class="text-xl">280+</p>
+                <p>Properties</p>
+                <p class="mt-5 font-thin">
+                  Explore our wide variety of properties to fid your dream home
+                  today
+                </p>
+                <div class="bg-white mt-5 rounded-full w-max p-3 float-right">
+                  <img src="images/right-arrow-icon.png" class="h-4" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <img
+                src="images/best-pro-2.jpg"
+                class="h-full rounded-2xl"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOCAL EXPERTISE -->
+    <div data-aos="fade-up" data-aos-duration="800" class="bg-[#1F4B43] py-20">
+      <div
+        class="md:flex md:flex-row gap-20 p-5 flex flex-col justify-center items-center"
+      >
+        <div class="w-max relative">
+          <img src="images/local-expertise.png" class="max-h-96" alt="" />
+          <img
+            src="images/total-clients.png"
+            class="max-h-14 absolute top-5 left-5"
+            alt=""
+          />
+        </div>
+        <div class="max-w-md">
+          <p class="text-white text-3xl">Local expertise for luxury homes</p>
+          <p class="text-white font-light text-sm mt-5">
+            Pellentesque egestas elementum egestas faucibus sem. Velit nunc
+            egestas ut morbi. Leo diam diam nibh eget fermentum massa pretium.
+            Mi mauris nulla ac dictum ut mauris non.
+          </p>
+          <button
+            class="bg-[#E7C873] rounded-lg px-3 py-1 mt-5 hover:bg-white hover:text-black"
+          >
+            Learn More <i class="fa-solid fa-arrow-right ml-2 mt-2"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-row flex-col justify-center items-center text-center gap-16 py-10"
+      >
+        <div>
+          <p class="text-[#E7C873] text-3xl">$18M</p>
+          <p class="text-white font-extralight">
+            Owned from properties transactions
+          </p>
+        </div>
+        <div>
+          <p class="text-[#E7C873] text-3xl">26K</p>
+          <p class="text-white font-extralight">Properties for Buy</p>
+        </div>
+        <div>
+          <p class="text-[#E7C873] text-3xl">15K</p>
+          <p class="text-white font-extralight">Properties for Sell</p>
+        </div>
+        <div>
+          <p class="text-[#E7C873] text-3xl">800</p>
+          <p class="text-white font-extralight">
+            Daily completed transactions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- REVIEWS -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      class="flex md:flex-row flex-col justify-center items-center md:gap-28 gap-16 p-8 md:py-20 border-2 border-[#E1E1E1]"
+    >
+      <div class="max-w-md">
+        <div>
+          <p class="mt-5 text-4xl">What our customers are saying us ?</p>
+          <p class="mt-5 font-light">
+            Various versions have evolved over the years, sometimes by accident,
+            sometimes on purpose injected humour and the like.
+          </p>
+        </div>
+        <div class="flex gap-10 mt-5">
+          <div>
+            <p class="text-2xl">10m+</p>
+            <p>Happy People</p>
+          </div>
+          <div>
+            <p class="text-2xl">4.88</p>
+            <p>Overall rating</p>
+            <img src="images/5star.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="max-w-md">
+        <div class="flex justify-between">
+          <div class="flex gap-5">
+            <div>
+              <img src="images/reviewer-1.png" class="h-10" alt="" />
+            </div>
+            <div>
+              <p class="text-xl">Cameron Williamson</p>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/inverter-comma-icon.png" class="h-8" alt="" />
+          </div>
+        </div>
+        <div class="mt-5">
+          <p class="font-light">
+            Searches for multiplexes, property comparisons, and the loan
+            estimator. Works great. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dores.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LEADING COMPANIES -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      class="flex flex-col justify-center items-center"
+    >
+      <div class="text-center mt-10">
+        <p>Thousands of world’s leading companies trust Space</p>
+      </div>
+      <div class="md:flex md:flex-row grid grid-cols-2 gap-16 my-10">
+        <img src="images/amazon.png" class="md:h-5" alt="" />
+        <img src="images/amd.png" class="md:h-5" alt="" />
+        <img src="images/cisco.png" class="md:h-5" alt="" />
+        <img src="images/dropcom.png" class="md:h-5" alt="" />
+        <img src="images/logitech.png" class="md:h-5" alt="" />
+        <img src="images/spotify.png" class="md:h-5" alt="" />
+      </div>
+    </div>
+    <!-- RECENT ARTICLES -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      class="p-5 mt-10 mb-20 bg-[#F9F9F9]"
+    >
+      <!-- DIV HEADING -->
+      <div class="text-center my-14">
+        <p class="text-3xl font-bold tracking-wide">Recent Articles & News</p>
+        <p class="text-sm mt-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <!-- CARDS -->
+      <div
+        class="flex flex-wrap md:flex-row flex-col justify-evenly items-center gap-5"
+      >
+        <div class="max-w-72 text-center bg-white p-5 rounded-xl">
+          <div>
+            <img src="images/article-1.jpg" class="rounded-2xl" alt="" />
+          </div>
+          <div class="flex gap-2 justify-center items-center mt-5">
+            <p>Apartment</p>
+            <p class="font-black">.</p>
+            <p>March 19, 2024</p>
+          </div>
+          <div class="mt-3">
+            <p class="text-lg font-semibold">
+              Housing Markets That Changed the Most This Week
+            </p>
+          </div>
+          <div class="mt-3">
+            <button class="font-semibold">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="max-w-72 text-center bg-white p-5 rounded-xl">
+          <div>
+            <img src="images/article-2.jpg" class="rounded-2xl" alt="" />
+          </div>
+          <div class="flex gap-2 justify-center items-center mt-5">
+            <p>Apartment</p>
+            <p class="font-black">.</p>
+            <p>March 19, 2024</p>
+          </div>
+          <div class="mt-3">
+            <p class="text-lg font-semibold">
+              Read Unveils the Best Canadian Cities for Biking
+            </p>
+          </div>
+          <div class="mt-3">
+            <button class="font-semibold">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="max-w-72 text-center bg-white p-5 rounded-xl">
+          <div>
+            <img src="images/article-3.jpg" class="rounded-2xl" alt="" />
+          </div>
+          <div class="flex gap-2 justify-center items-center mt-5">
+            <p>Office</p>
+            <p class="font-black">.</p>
+            <p>March 19, 2024</p>
+          </div>
+          <div class="mt-3">
+            <p class="text-lg font-semibold">
+              10 Walkable Cities Where You Can Live Affordably
+            </p>
+          </div>
+          <div class="mt-3">
+            <button class="font-semibold">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="max-w-72 text-center bg-white p-5 rounded-xl">
+          <div>
+            <img src="images/article-4.jpg" class="rounded-2xl" alt="" />
+          </div>
+          <div class="flex gap-2 justify-center items-center mt-5">
+            <p>Shop</p>
+            <p class="font-black">.</p>
+            <p>March 19, 2024</p>
+          </div>
+          <div class="mt-3">
+            <p class="text-lg font-semibold">
+              New Apartment Nice in the Best Canadian Cities
+            </p>
+          </div>
+          <div class="mt-3">
+            <button class="font-semibold">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      class="bg-[#FFF8F6] grid md:grid-cols-2 grid-cols-1 gap-5 place-items-center px-5 py-16"
+    >
+      <div>
+        <p class="font-medium text-3xl">Become a Real Estate Agent</p>
+        <p class="font-normal">
+          We only work with the best companies around the globe
+        </p>
+      </div>
+      <div>
+        <button class="bg-[#E7C873] px-3 py-2 rounded-lg">
+          Register Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="bg-[#1A1A1A] p-5">
+        <div
+          class="flex md:flex-row gap-10 flex-col justify-between items-center px-5 py-10 border-b-2 border-[#3c3c3c]"
+        >
+          <div>
+            <img src="images/logo-justhome.png" class="h-10" alt="" />
+          </div>
+          <div class="flex gap-5 justify-center items-center">
+            <p class="text-white">Follow Us</p>
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+            <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-row md:justify-center flex-wrap gap-10 border-b-2 border-[#3c3c3c] p-5"
+        >
+          <div>
+            <p class="text-[#8c8b8b] text-xl mt-5">Subscribe</p>
+            <form action="" class="mt-5">
+              <input
+                class="bg-transparent border-x-0 border-t-0 border-b-[#3c3c3c]"
+                type="email"
+                placeholder="Your e-mail"
+              />
+              <button
+                type="submit"
+                class="text-white mr-3 border-none bg-[#3c3c3c] px-5 py-2 rounded-3xl"
+              >
+                Send<i
+                  class="fa-solid fa-arrow-right ml-2"
+                  style="color: #ffffff"
+                ></i>
+              </button>
+            </form>
+            <p class="text-white font-light mt-5">
+              Subscribe to our newsletter to receive our weekly feed.
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-[#8c8b8b] text-xl my-5">Discover</p>
+            <a href="" class="text-white font-light mt-3">Miami</a>
+            <a href="" class="text-white font-light mt-3">New York</a>
+            <a href="" class="text-white font-light mt-3">Chicago</a>
+            <a href="" class="text-white font-light mt-3">Florida</a>
+            <a href="" class="text-white font-light mt-3">Los Angeles</a>
+            <a href="" class="text-white font-light mt-3">San Diego</a>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-[#8c8b8b] text-xl my-5">Quick Links</p>
+            <a href="" class="text-white font-light mt-3">About</a>
+            <a href="" class="text-white font-light mt-3">Contact</a>
+            <a href="" class="text-white font-light mt-3">FAQ’s</a>
+            <a href="" class="text-white font-light mt-3">Blog</a>
+            <a href="" class="text-white font-light mt-3">Pricing Plans</a>
+            <a href="" class="text-white font-light mt-3">Privacy Policy</a>
+            <a href="" class="text-white font-light mt-3">Terms & Conditions</a>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-[#8c8b8b] text-xl my-5">Contact Us</p>
+            <p class="text-white font-light mt-3">hi@justhome.com</p>
+            <p class="text-white font-light mt-3">(123) 456-7890</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-[#8c8b8b] text-xl my-5">Our Address</p>
+            <p class="text-white font-light mt-3">99 Fifth Avenue, 3rd Floor</p>
+            <p class="text-white font-light mt-3">San Francisco, CA 1980</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-[#8c8b8b] text-xl my-5">Get the app</p>
+            <a href="">
+              <div
+                class="w-52 rounded-xl px-4 py-3 flex gap-5 justify-center items-center bg-[#454444]"
+              >
+                <img src="images/apple-logo.png" class="h-10" alt="" />
+                <p class="text-white font-light">
+                  Download on the <span class="font-normal">Apple Store</span>
+                </p>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="w-52 rounded-xl px-4 py-3 flex gap-5 justify-center items-center bg-[#454444] mt-5"
+              >
+                <img src="images/play-store-logo.png" class="h-10" alt="" />
+                <p class="text-white font-light">
+                  Download on the <span class="font-normal">Play Store</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center px-5 py-5">
+          <p class="text-white font-thin">Copyright © 2024. JustHome</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FLOWBITE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
